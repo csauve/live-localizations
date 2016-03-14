@@ -11,25 +11,23 @@ module.exports = () => (
       <p><Message message="contactIntro"/></p>
 
       <form>
-        <label>
-          <Message message="fullNameLabel"/>
+        <div className="form-element">
+          <label><Message message="fullNameLabel"/></label>
           <input type="text"/>
-        </label>
+        </div>
 
-        <label>
-          <Message message="emailAddressLabel"/>
+        <div className="form-element">
+          <label><Message message="emailAddressLabel"/></label>
           <input type="email"/>
           <p className="help"><Message message="requiredField"/></p>
-        </label>
+        </div>
 
-        <label>
-          <Message message="messageLabel"/>
+        <div className="form-element">
+          <label><Message message="messageLabel"/></label>
           <textarea/>
           <p className="help"><Message message="requiredField"/></p>
-        </label>
+        </div>
       </form>
-
-
 
     </MessageContext>
   </div>

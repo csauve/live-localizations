@@ -16,11 +16,14 @@ body {
   margin: 8px auto;
 
   form {
+    .form-element {
+      margin-bottom: 30px;
+      margin-top: 15px;
+    }
+
     label {
       font-weight: bold;
       display: block;
-      margin-bottom: 30px;
-      margin-top: 15px;
     }
 
     input, textarea {
