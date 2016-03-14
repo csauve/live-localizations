@@ -1,6 +1,7 @@
 const ReactDOM = require("react-dom");
 const React = require("react");
 
-const Homepage = require("./components/Homepage/Homepage.jsx");
+const Message = require("./components/Message/Message.jsx");
+const Homepage = require("./pages/Homepage/Homepage.jsx");
 
-ReactDOM.render(<Homepage greeting={"hey"}/>, document.getElementById("mountpoint"));
+ReactDOM.render(<Homepage/>, document.getElementById("mountpoint"));

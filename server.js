@@ -11,7 +11,7 @@ const Document = React.createFactory(require("./src/Document.jsx"));
 app.use("/static", serveStatic("./dist"));
 
 app.get("/", (req, res) => {
-  const html = ReactDOMServer.renderToStaticMarkup(Document({title: "wow"}))
+  const html = ReactDOMServer.renderToStaticMarkup(Document())
   res.send("<!DOCTYPE html>" + html);
 });
 

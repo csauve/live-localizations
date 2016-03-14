@@ -1,14 +1,14 @@
 const React = require("react");
 
-var Page = require("./components/Homepage/Homepage.jsx");
+var Page = require("./pages/Homepage/Homepage.jsx");
 
 module.exports = ({title}) => (
   <html lang="en">
     <head>
       <meta charSet="UTF-8"/>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
       <link rel="stylesheet" href="/static/styles.css"/>
-      <title>{title}</title>
+      <title>Example</title>
     </head>
     <body>
       <div id="mountpoint">

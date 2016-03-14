@@ -18,7 +18,7 @@ gulp.task("build-scripts", function() {
     .pipe(source("bootstrap.js"))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./dist"));
 });
@@ -36,7 +36,7 @@ gulp.task("build-styles", function() {
 
 gulp.task("default", ["vendor", "build-scripts", "build-styles"]);
 
-gulp.task("dev", function() {
+gulp.task("dev", ["default"], function() {
   gulp.watch(["./src/**/*.js", "./src/**/*.jsx"], ["build-scripts"]);
   gulp.watch(["./src/**/*.css", "./src/**/*.scss"], ["build-styles"]);
 });

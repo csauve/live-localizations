@@ -1,0 +1,25 @@
+.message-context {
+  .debug-area {
+    color: #555;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1.0;
+    }
+
+    .messages-raw, code {
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 8px;
+      background: rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    code {
+      padding: 2px;
+    }
+  }
+}

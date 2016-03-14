@@ -1,0 +1,48 @@
+$page-bg: #fff;
+$text-fg: #333;
+$text-faint: #888;
+$text-size: 14pt;
+$border-color: #aaa;
+
+body {
+  font-family: sans-serif;
+  background: $page-bg;
+  color: $text-fg;
+  font-size: $text-size;
+}
+
+.homepage-content {
+  max-width: 800px;
+  margin: 8px auto;
+
+  form {
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      font-size: $text-size;
+      padding: 8px;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    .help {
+      margin-top: 4px;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 90%;
+      color: $text-faint;
+    }
+  }
+}
